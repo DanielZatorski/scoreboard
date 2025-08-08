@@ -37,3 +37,17 @@ function triggerPlusThree(button) {
     guest.textContent = countGuest;
   }
 }
+
+
+function newGame(button){
+
+    if (button.id === "startNewGame") {
+        home.textContent = 0
+        guest.textContent = 0
+        countHome = 0
+        countGuest = 0
+        
+
+    }
+
+}
