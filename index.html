@@ -6,22 +6,27 @@
         <div class="container">
             <div>
                 <h3>HOME</h3>
-                <div>SCORE PLACEHOLDER</div>
+                <div id="countElhome">0</div>
                 <div class="points">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>                        
+                    <button id="buttonPlusOneHome" onclick="triggerPlusOne(this)">+1</button>
+                    <button id="buttonPlusTwoHome">+2</button>
+                    <button id="buttonPlusThreeHome">+3</button>                        
                 </div>
             </div>
             <div>
                 <h3>GUEST</h3>
-                <div>SCORE PLACEHOLDER</div>
+                <div id="countElguest">0</div>
                 <div class="points">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button id="buttonPlusOneGuest" onclick="triggerPlusOne(this)">+1</button>
+                    <button id="buttonPlusTwoGuest">+2</button>
+                    <button id="buttonPlusThreeGuest">+3</button> 
                 </div>
             </div>
+        </div>
+        <div class="newGame">
+
+            <button>NEW GAME</button>
+
         </div>
         <script src="index.js"></script>
     </body>

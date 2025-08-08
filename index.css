@@ -14,3 +14,19 @@ body {
     justify-content: space-around;
 
 }
+
+.newGame {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.scorePlaceholder{
+
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color: #f94f6d;
+
+}
