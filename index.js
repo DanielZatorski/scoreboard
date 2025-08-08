@@ -58,13 +58,13 @@ function newGame(button){
 
 function highlightLeader() {
   if (countHome > countGuest) {
-    homeTitle.style.color = "red";
-    guestTitle.style.color = "black";
-  } else if (countHome < countGuest) {
-    guestTitle.style.color = "red";
-    homeTitle.style.color = "black";
-  } else {
     homeTitle.style.color = "yellow";
+    guestTitle.style.color = "white";
+  } else if (countHome < countGuest) {
     guestTitle.style.color = "yellow";
+    homeTitle.style.color = "white";
+  } else {
+    homeTitle.style.color = "white";
+    guestTitle.style.color = "white";
   }
 }

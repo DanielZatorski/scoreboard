@@ -1,10 +1,14 @@
 body {
     margin: 0;
+    background-color: #1B244A;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 .points{
@@ -28,5 +32,39 @@ body {
     height: 100px;
     background-color: black;
     color: #f94f6d;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 80px;
+                                                
+}
+
+.banner{
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    
+
+}
+
+.btnStyle{
+    margin-top: 50px;
+    color: #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    border: solid 2px #9AABD8 ;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+
+}
+
+.btnStyle:hover {
+
+    color: green;
+    border: solid 2px green ;
+
 
 }
