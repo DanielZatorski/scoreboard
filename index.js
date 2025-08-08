@@ -1,6 +1,10 @@
 const home = document.getElementById("countElhome");
 const guest = document.getElementById("countElguest");
 
+
+const homeTitle = document.getElementById("homeBanner");
+const guestTitle = document.getElementById("guestBanner");
+
 // start from what's in the DOM (or 0)
 let countHome = Number(home.textContent) || 0;
 let countGuest = Number(guest.textContent) || 0;
@@ -14,7 +18,7 @@ function triggerPlusOne(button) {
   } else if (button.id === "buttonPlusOneGuest") {
     countGuest++;
     guest.textContent = countGuest;
-  }
+  } highlightLeader()
 }
 
 
@@ -25,7 +29,7 @@ function triggerPlusTwo(button) {
   } else if (button.id === "buttonPlusTwoGuest") {
     countGuest += 2;
     guest.textContent = countGuest;
-  }
+  } highlightLeader();
 }
 
 function triggerPlusThree(button) {
@@ -35,7 +39,7 @@ function triggerPlusThree(button) {
   } else if (button.id === "buttonPlusThreeGuest") {
     countGuest += 3;
     guest.textContent = countGuest;
-  }
+  } highlightLeader();
 }
 
 
@@ -48,6 +52,19 @@ function newGame(button){
         countGuest = 0
         
 
-    }
+    } highlightLeader();
 
+}
+
+function highlightLeader() {
+  if (countHome > countGuest) {
+    homeTitle.style.color = "red";
+    guestTitle.style.color = "black";
+  } else if (countHome < countGuest) {
+    guestTitle.style.color = "red";
+    homeTitle.style.color = "black";
+  } else {
+    homeTitle.style.color = "yellow";
+    guestTitle.style.color = "yellow";
+  }
 }
